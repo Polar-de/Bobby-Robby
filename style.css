@@ -1,0 +1,45 @@
+/* Custom Fonts */
+@font-face {
+    font-family: Dogica;
+    src: url('./font/dogicapixel.ttf');
+}
+@font-face {
+    font-family: Dogica;
+    font-weight: bold;
+    src: url('./font/dogicapixelbold.ttf');
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas:
+    'left main right'
+    'left bottom right';
+    color: #b3b3b3;
+}
+
+li {
+    list-style: none;
+}
+
+.main { grid-area: header; }
+.left { grid-area: left; }
+.right { grid-area: right; }
+
+.canvasHidden {
+    display: none;
+}
+
+#assets {
+    display: none;
+}
+
+canvas#canvas{
+    border-radius:10px;
+}
+

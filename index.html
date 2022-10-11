@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <title>Bobby & Robby</title>
+    </head>
+    <body>
+        <main>
+            <!-- Main Canvas -->
+            <div class="header"><canvas id="canvas" width="1280" height="704"></canvas></div>
+
+            <div class="left">
+                <img src="./img/css-images/01.png" alt="left" id="left" />
+            </div>
+            <div class="right">
+                <img src="./img/css-images/02.png" alt="right" id="right" />
+            </div>
+            <div class="bottom">
+                <ul>
+                    <h1>
+                        <li>Press F for Fullscreen</li>
+                        <li>Drücke F für Vollbild</li>
+                    </h1>
+                </ul>
+            </div>
+            <div class="credits">
+                    <p>Game by</p>
+                    <p>~Lars Scherbel ~Fabian Rabe ~Lisa Freidel</p>
+                    <p>Music by ~Swngyill YOON</p>
+            </div>
+        </main>
+        <div id="assets">
+            <!-- spritesheets -->
+            <img src="./img/spritesheet/Bobby.png" alt="" id="spriteBobby" />
+            <img src="./img/spritesheet/Boberta.png" alt="" id="spriteBoberta" />
+            <!-- tilesets -->
+            <img src="./img/tileset/w1-volles-tileset-Sheet.png" alt="tileset" id="tileset" />
+            <img src="./img/tileset/w2-volles-tileset-Sheet.png" alt="tileset2" id="tileset2" />
+            <img src="./img/tileset/w3-volles-tileset-Sheet.png" alt="tileset3" id="tileset3" />
+            <img src="./img/tileset/w4-volles-tileset-Sheet.png" alt="tileset4" id="tileset4" />
+            <div id="btn">
+                <img src="./img/buttons/en.png" alt="" id="enBtn" />
+                <img src="./img/buttons/enHover.png" alt="" id="enBtnHover" />
+                <img src="./img/buttons/enSelected.png" alt="" id="enSelected" />
+                <img src="./img/buttons/de.png" alt="" id="deBtn" />
+                <img src="./img/buttons/deHover.png" alt="" id="deBtnHover" />
+                <img src="./img/buttons/deSelected.png" alt="" id="deSelected" />
+                <img src="./img/buttons/mainBtn.png" alt="" id="mainBtn" />
+                <img src="./img/buttons/mainBtnHover.png" alt="" id="mainBtnHover" />
+                <img src="./img/buttons/backBtnEN.png" alt="" id="backBtnEN" />
+                <img src="./img/buttons/backBtnDE.png" alt="" id="backBtnDE" />
+                <img src="./img/buttons/backBtnENHover.png" alt="" id="backBtnENHover" />
+                <img src="./img/buttons/backBtnDEHover.png" alt="" id="backBtnDEHover" />
+            </div>
+
+            <!-- Menü -->
+            <img src="./img/menu/Instructions.png" alt="" id="instructions" />
+            <img src="./img/menu/Anleitung.png" alt="" id="anleitung" />
+            <img src="./img/menu/headline.png" alt="" id="headline">
+
+            <!-- Kitchen -->
+            <img src="./img/kitchen/kitchenBg.png" alt="" id="kitchen" />
+            <img src="./img/kitchen/glow_window.png" alt="" id="glowWindow" />
+            <img src="./img/kitchen/glow_refrigerator.png" alt="" id="glowRefrigerator" />
+            <img src="./img/kitchen/glow_oven.png" alt="" id="glowOven" />
+            <img src="./img/kitchen/glow_cookerHood.png" alt="" id="glowHood" />
+            <img src="./img/kitchen/locked.png" alt="" id="locked" />
+            <img src="./img/kitchen/unlocked.png" alt="" id="unlocked" />
+
+            <!-- Overlays -->
+            <img src="./img/overlay/GameOverDE.png" alt="" id="gameOverDE" />
+            <img src="./img/overlay/GameOverEN.png" alt="" id="gameOverEN" />
+            <img src="./img/overlay/InGameMenuEn.png" alt="" id="InGameMenuEn" />
+            <img src="./img/overlay/InGameMenuDe.png" alt="" id="InGameMenuDe" />
+            <img src="./img/overlay/LevelFinishedEn.png" alt="" id="levelFinishedEn">
+            <img src="./img/overlay/LevelFinishedDe.png" alt="" id="levelFinishedDe">
+
+            <!-- Character Select -->
+            <img src="./img/menu/bobertaBobby.png" alt="" id="bobertaBobby" />
+            <img src="./img/menu/bobby.png" alt="" id="bobby" />
+            <img src="./img/menu/boberta.png" alt="" id="boberta" />
+            <img src="./img/menu/CharacterSelectEn.png" alt="" id="characterSelectEn" />
+            <img src="./img/menu/CharacterSelectDe.png" alt="" id="characterSelectDe" />
+
+            <!-- Animations -->
+            <audio id="menuMusic" src="./audio//bgMusic/menu.mp3"></audio>
+        </div>
+        <video id="w1" src="./img/animate/w1.mp4" hidden></video>
+        <video id="w2" src="./img/animate/w2.mp4" hidden></video>
+        <video id="w3" src="./img/animate/w3.mp4" hidden></video>
+        <video id="w4" src="./img/animate/w4.mp4" hidden></video>
+
+        <div id="scripts">
+            <script src="./scripts/main.js"></script>
+            <script src="./scripts/level.js"></script>
+            <script src="./scripts/draw.js"></script>
+            <script src="./scripts/helper.js"></script>
+            <script src="./class/Parallax.js"></script>
+            <script src="./class/Player.js"></script>
+            <script src="./scripts/collision.js"></script>
+            <script src="./class/Hud.js"></script>
+            <script src="./scripts/mainMenu.js"></script>
+            <script src="./class/Kitchen.js"></script>
+        </div>
+    </body>
+</html>
